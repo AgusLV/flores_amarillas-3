@@ -10,7 +10,7 @@
     <link rel="Stylesheet" href="style.css">
     <title>Flower</title>
 </head>
-<body>
+<body onclick="PlayAudio()">
 
 <div class="flower">
     <div class="text-above">De tu novio Agustin :)</div>
@@ -42,6 +42,16 @@
     </div>
     <div class="text-below">Mi niña especial <3 </div>
   </div>
+<audio id="musica" loop>
+  <source src="Audio/Flores_Amarillas.mp3" type="audio/mpeg">
+  Este navegador no acepta formatos de audio
+</audio>
+<script>
+  function PlayAudio(){
+    document.getElementById("musica").play();
+  }
+
+</script>
 </body>
 </html>
 <!-- Código: Daniel Arteaga de Faster Academy-->
